@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NotesApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/titleText</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/backgroundDarkBlue</item>
+        <item name="android:textColorSecondary">@color/darkTextGrey</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColorHint">@color/titleText</item>
+        <item name="android:windowBackground">@color/backgroundDarkBlue</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:itemBackground">#272636</item>
+
+        <item name="colorAccent">@color/titleText</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+    </style>
+
+    <style name="MyDarkToolbarStyle" parent="ThemeOverlay.AppCompat">
+        <item name="android:colorBackground">#272636</item>
+        <item name="android:textColor">@color/titleText</item>
+        <item name="popupMenuBackground">@drawable/dialogbox</item>
+
+    </style>
+</resources>

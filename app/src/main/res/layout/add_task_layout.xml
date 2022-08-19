@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_task_layout"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/bottom_sheet_dialog_background"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_taskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your task here"
+        android:textColor="@color/lightDarkTextGrey"
+        android:textColorHint="@color/lightDarkTextGrey" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="60dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/tv_setDueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/note_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_light"
+            android:padding="6dp"
+            android:text="SET DUE DATE"
+            android:textAlignment="center"
+            android:textColor="@color/titleText"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_saveTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/note_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_light"
+            android:padding="6dp"
+            android:text="SAVE"
+            android:textColor="@color/titleText"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

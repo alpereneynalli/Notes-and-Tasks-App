@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hold_options"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@drawable/bottom_sheet_dialog_background"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/deleteLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="6dp"
+            android:src="@drawable/ic_baseline_delete_forever_24"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Delete"
+            android:textAlignment="center"
+            android:textColor="@color/titleText"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/editLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_baseline_edit_24"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Edit"
+            android:textAlignment="center"
+            android:textColor="@color/titleText"/>
+    </LinearLayout>
+
+
+</LinearLayout>
