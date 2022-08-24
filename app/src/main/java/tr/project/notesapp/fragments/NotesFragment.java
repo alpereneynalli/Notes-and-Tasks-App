@@ -45,7 +45,7 @@ public class NotesFragment extends Fragment {
 
         FirestoreRecyclerOptions<Note> userNotes = new FirestoreRecyclerOptions.Builder<Note>().setQuery(query, Note.class).build();
 
-        adapter = new NotesAdapter(userNotes);
+        adapter = new NotesAdapter(userNotes, getContext());
         recyclerView = view.findViewById(R.id.recycler_view_notes);
         recyclerView.setHasFixedSize(true);
         staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);

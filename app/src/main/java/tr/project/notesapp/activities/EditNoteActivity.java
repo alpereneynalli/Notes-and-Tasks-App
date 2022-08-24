@@ -72,11 +72,7 @@ public class EditNoteActivity extends AppCompatActivity {
         tv_editMode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!editmode) {
-                    setEditMode(true);
-                } else {
-                    setEditMode(false);
-                }
+                setEditMode(!editmode);
             }
         });
 
@@ -95,18 +91,10 @@ public class EditNoteActivity extends AppCompatActivity {
                 note.put("content", newContent);
                 note.put("date", strDate);
                 note.put("dateObj", date);
+                note.put("password", bundle.getString("password"));
+                note.put("passwordBool", bundle.getBoolean("passwordBool"));
 
-                documentReference.set(note).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void unused) {
-                        onBackPressed();
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(EditNoteActivity.this, "Failed to save note", Toast.LENGTH_SHORT).show();
-                    }
-                });
+                editNoteDocument(documentReference, note);
             }
         });
 
@@ -117,7 +105,7 @@ public class EditNoteActivity extends AppCompatActivity {
                 documentReference.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
-                        onBackPressed();
+                        finish();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -131,7 +119,7 @@ public class EditNoteActivity extends AppCompatActivity {
     }
 
 
-    public void setEditMode(Boolean mode) {
+    private void setEditMode(Boolean mode) {
         if (mode) {
             tv_editMode.setText("EDIT MODE\nON");
             tv_editMode.setTextColor(getResources().getColor(R.color.titleText));
@@ -151,5 +139,19 @@ public class EditNoteActivity extends AppCompatActivity {
             et_editNoteContent.setSingleLine(false);
             editmode = false;
         }
+    }
+
+    private void editNoteDocument(DocumentReference documentReference, Map<String, Object> note){
+        documentReference.set(note).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void unused) {
+                onBackPressed();
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(EditNoteActivity.this, "Failed to save note", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

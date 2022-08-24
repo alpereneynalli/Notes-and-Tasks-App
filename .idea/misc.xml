@@ -3,8 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/alpereneynalli/AndroidStudioProjects/NotesAndTasks/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.316" />
+        <entry key="..\:/Users/alpereneynalli/AndroidStudioProjects/NotesAndTasks/app/src/main/res/layout/activity_create_note.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/alpereneynalli/AndroidStudioProjects/NotesAndTasks/app/src/main/res/layout/activity_edit_note.xml" value="0.30416666666666664" />
         <entry key="..\:/Users/alpereneynalli/AndroidStudioProjects/NotesAndTasks/app/src/main/res/layout/activity_login.xml" value="0.30416666666666664" />
         <entry key="..\:/Users/alpereneynalli/AndroidStudioProjects/NotesAndTasks/app/src/main/res/layout/activity_notes.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/alpereneynalli/AndroidStudioProjects/NotesAndTasks/app/src/main/res/layout/activity_sign_up.xml" value="0.32083333333333336" />
+        <entry key="..\:/Users/alpereneynalli/AndroidStudioProjects/NotesAndTasks/app/src/main/res/layout/deletedialog.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/alpereneynalli/AndroidStudioProjects/NotesAndTasks/app/src/main/res/layout/fragment_notes.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/alpereneynalli/AndroidStudioProjects/NotesAndTasks/app/src/main/res/layout/notePasswordDialog.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/alpereneynalli/AndroidStudioProjects/NotesAndTasks/app/src/main/res/layout/note_item.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/alpereneynalli/AndroidStudioProjects/NotesAndTasks/app/src/main/res/layout/noteclickdialog.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/alpereneynalli/AndroidStudioProjects/NotesAndTasks/app/src/main/res/layout/notepassworddialog.xml" value="0.31875" />
+        <entry key="..\:/Users/alpereneynalli/AndroidStudioProjects/NotesAndTasks/app/src/main/res/layout/setPasswordDialog.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/alpereneynalli/AndroidStudioProjects/NotesAndTasks/app/src/main/res/layout/signedupdialog.xml" value="0.30416666666666664" />
       </map>
     </option>
   </component>

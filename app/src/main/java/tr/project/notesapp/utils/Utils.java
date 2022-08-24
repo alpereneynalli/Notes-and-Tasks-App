@@ -9,8 +9,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.widget.AppCompatButton;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Formatter;
 
 import tr.project.notesapp.R;
 import tr.project.notesapp.activities.LoginActivity;
@@ -61,6 +64,24 @@ public class Utils {
         SimpleDateFormat formatter = new SimpleDateFormat("dd MMMM yyyy hh:mm a");
         String strDate = formatter.format(date);
         return strDate;
+    }
+
+    public static String encryptString(String input) throws NoSuchAlgorithmException {
+
+        MessageDigest messageDigest = MessageDigest.getInstance("SHA-512");
+        byte[] digestedArr = messageDigest.digest(input.getBytes());
+        return byteToHex(digestedArr);
+    }
+
+    public static String byteToHex(final byte[] hash) {
+        Formatter formatter = new Formatter();
+        for (byte b : hash) {
+            formatter.format("%02x", b);
+
+        }
+        String result = formatter.toString();
+        formatter.close();
+        return result;
     }
 
 }

@@ -38,7 +38,8 @@
         android:maxLines="10"
         android:text="note content holder xd"
         android:textColor="@color/lightDarkTextGrey"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        />
 
     <TextView
         android:id="@+id/tv_noteCardDate"
@@ -51,5 +52,14 @@
         android:includeFontPadding="false"
         android:text="12 January 2021"
         android:textColor="@color/lightDarkTextGrey"
-        android:textSize="10sp" />
+        android:textSize="10sp"
+        />
+
+    <ImageView
+        android:id="@+id/img_noteLock"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_lock_24"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"/>
 </LinearLayout>

@@ -16,7 +16,7 @@ import tr.project.notesapp.adapters.TaskAdapter;
 
 public class TasksTouchHelper extends ItemTouchHelper.SimpleCallback {
 
-    private TaskAdapter adapter;
+    private final TaskAdapter adapter;
 
     public TasksTouchHelper(TaskAdapter adapter) {
         super(0, ItemTouchHelper.LEFT);

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_noteOpenPassword"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/titleText"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:hint="Enter Note Password"
+                android:inputType="textPassword"
+                android:textColor="@color/titleText"
+                android:textColorHint="@color/textGrey" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/backNoteBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/ripple"
+                    android:text="BACK"
+                    android:textAlignment="center"
+                    android:textColor="@color/titleText" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/openNoteBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ripple"
+                    android:text="OPEN"
+                    android:textAlignment="center"
+                    android:textColor="@color/titleText" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
