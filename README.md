@@ -1,8 +1,6 @@
 # Notes and Tasks App
  
- 🗒️ Basic Notes and Tasks app with Firebase.  
- APK Link: https://mega.nz/file/BE02xSCS#UhIt15FUWHmpfORD9BS59PaSPmv9sKAkGnbf9V5tTuo
- 
+ 🗒️ Notes and Tasks app with Firebase. No architecture.
  <h4>Features</h4>
 <ul>
   <li>Login-Logout, Sign Up, Reset Password</li>
